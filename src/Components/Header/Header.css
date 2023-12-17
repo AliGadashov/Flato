@@ -1,0 +1,75 @@
+.Header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3rem;
+}
+
+.Header > button {
+  width: 9rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: var(--main-white);
+  background: var(--main-dark-peach);
+  transition: 300ms ease;
+}
+
+.Header > button:hover {
+  cursor: pointer;
+  background: var(--main-peach);
+}
+
+.Header > span {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 300ms ease;
+}
+
+.Header > span:hover {
+  cursor: pointer;
+  color: var(--main-dark-peach);
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .Header > button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: var(--main-white);
+    background: var(--main-dark-peach);
+    transition: 300ms ease;
+  }
+
+  .Header > button:hover {
+    cursor: pointer;
+    background: var(--main-peach);
+  }
+
+  .Header > span {
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 300ms ease;
+  }
+
+  .Header > span:hover {
+    cursor: pointer;
+    color: var(--main-dark-peach);
+  }
+}

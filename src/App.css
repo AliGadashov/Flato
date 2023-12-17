@@ -1,0 +1,28 @@
+:root {
+  --main-white: #ffffff;
+  --main-black: #000000;
+  --main-light-peach: #fdf7ec;
+  --main-peach: #ffcfa3;
+  --main-dark-peach: #fc9a65;
+  --main-light: #fceed4;
+}
+
+.colorfullSpan {
+  color: var(--main-dark-peach);
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: var(--main-light-peach);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-black);
+}

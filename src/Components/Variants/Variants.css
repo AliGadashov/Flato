@@ -1,0 +1,113 @@
+.Variants {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 10rem;
+}
+
+.variantHeader {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.variantsCategories {
+  display: flex;
+  gap: 1rem;
+}
+
+.variantsCategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--main-peach);
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  transition: 0.5s ease;
+}
+
+.variantsCategory:hover {
+  background-image: url(../../assets/l-wave.jpg);
+  background-blend-mode: soft-light;
+  background-color: var(--main-peach);
+  transform: translateY(-15px);
+  cursor: pointer;
+}
+
+.variantsCategory > :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.variantsCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  background-color: var(--main-white);
+}
+
+.variantsCircle > img {
+  width: 5rem;
+  height: 5rem;
+  transition: 0.5s ease;
+}
+
+.variantsCircle > img:hover {
+  transform: translateY(-15px);
+}
+
+@media screen and (max-width: 768px) {
+  .Variants {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    height: 100%;
+  }
+
+  .variantHeader {
+    font-size: 2.5rem;
+  }
+
+  .variantsCategories {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .variantsCategory {
+    align-items: center;
+  }
+
+  .variantsCategory > :nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .variantsCategory > :nth-child(3) {
+    font-size: smaller;
+  }
+
+  .variantsCircle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+  }
+
+  .variantsCircle > img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .Variants {
+    padding: 1% 10%;
+  }
+}

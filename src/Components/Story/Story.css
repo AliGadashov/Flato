@@ -1,0 +1,174 @@
+.Stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 0 10rem 10rem 10rem;
+  height: 100vh;
+}
+
+.Stories > :first-child {
+  width: 50%;
+}
+
+.Stories > :first-child > span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.story {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.storyCategory {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  background-color: var(--main-light-peach);
+  transition: 0.3s ease;
+}
+
+.storySquare > img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  transition: 0.5s ease;
+}
+
+.storyCategory:hover img {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.05) rotate(2deg);
+}
+
+.storyCategory > :first-child {
+  position: relative;
+}
+
+.storyCategory > :first-child > :last-child {
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+
+.storyCategory > :last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem 2rem 1rem;
+  text-align: start;
+}
+
+.storyCategory > :last-child > :first-child {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.storyCategory > :last-child > :first-child:hover {
+  cursor: pointer;
+}
+
+.storyCategory > :last-child > button {
+  width: fit-content;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #ffb774;
+  transition: 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.storyCategory > :last-child > button:hover {
+  cursor: pointer;
+  color: var(--main-dark-peach);
+}
+
+.storySquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.etiquet-price {
+  position: absolute;
+  background: #f76868;
+  width: fit-content;
+  border-radius: 0 5px 5px 0;
+  padding: 0.2rem 1rem;
+  z-index: 20;
+  left: -14px;
+  bottom: 0px;
+}
+
+.etiquet-price > :nth-child(1) {
+  margin: 0;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--main-white);
+}
+
+.etiquet-price > :nth-child(2) {
+  margin: 0;
+  display: flex;
+  font-size: 0.8rem;
+  color: var(--main-white);
+}
+
+.etiquet-price div {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 0px solid #913737;
+  border-right: 15px solid #913737;
+  z-index: -6;
+}
+
+@media screen and (max-width: 768px) {
+  .Stories {
+    padding: 0rem 2rem 3rem 2rem;
+    height: 100%;
+  }
+
+  .Stories > :first-child {
+    width: 100%;
+    font-size: medium;
+  }
+
+  .Stories > :first-child > span {
+    font-size: 2.5rem;
+  }
+
+  .story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .Stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 1% 10% 10% 10%;
+    height: 100%;
+  }
+
+  .Stories > :first-child {
+    width: 70%;
+  }
+}

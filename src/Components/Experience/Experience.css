@@ -1,0 +1,112 @@
+.Experience {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 30rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  gap: 6rem;
+
+  place-items: center;
+  background-image: url(../../assets/man-making-ice-cream.png);
+  background-size: cover;
+  background-position-y: 700px;
+  background-blend-mode: soft-light;
+  background-color: var(--main-peach);
+}
+
+.leftExperience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftExperience > img {
+  width: 15rem;
+  transition: 0.8s ease-in-out;
+}
+
+.leftExperience > img:hover {
+  transform: scale(1.1);
+}
+
+.rightExperience {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-light-peach);
+  border-radius: 1rem;
+  padding: 2rem 1rem 2rem 3rem;
+  gap: 2rem;
+}
+
+.rightExperience > :first-child {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.rightExperience > :first-child > span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.rightExperience > :last-child {
+  display: flex;
+  gap: 5rem;
+}
+
+.left > div,
+.right > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.left > div > i,
+.right > div > i {
+  color: var(--main-dark-peach);
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Experience {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    padding: 5rem 2rem;
+    gap: 3rem;
+    background-image: url(../../assets/l-wave.jpg);
+    background-color: #f8d491;
+  }
+
+  .leftExperience > img {
+    width: 10rem;
+  }
+
+  .rightExperience {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .rightExperience > :first-child {
+    font-size: medium;
+  }
+
+  .rightExperience > :first-child > span {
+    font-size: 2.5rem;
+  }
+
+  .rightExperience > :last-child {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: smaller;
+  }
+}

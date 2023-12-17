@@ -1,0 +1,124 @@
+.Newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+
+  margin: 5rem 0;
+
+  background-image: url(../../assets/wave.jpg);
+  background-size: cover;
+  background-position-y: -200px;
+  background-blend-mode: soft-light;
+  background-color: var(--main-peach);
+}
+
+.Newsletter > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.Newsletter > div > :first-child {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.Newsletter > div > :last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Newsletter > div > :last-child > input {
+  width: 35rem;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  color: var(--main-dark-peach);
+  background: var(--main-white);
+}
+
+.Newsletter > div > :last-child > input:focus {
+  outline: 0.1rem solid var(--main-dark-peach);
+}
+
+.Newsletter > div > :last-child > button {
+  width: 13rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  color: var(--main-dark-peach);
+  background: var(--main-white);
+  transition: 0.3s ease;
+}
+
+.Newsletter > div > :last-child > button:hover {
+  cursor: pointer;
+  color: var(--main-white);
+  background: var(--main-dark-peach);
+}
+
+@media screen and (max-width: 768px) {
+  .Newsletter {
+    text-align: center;
+    height: 60vh;
+    background-position-y: 0px;
+    padding: 0 2rem;
+  }
+
+  .Newsletter > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .Newsletter > div > :first-child {
+    font-size: 2.5rem;
+    max-width: 70%;
+  }
+
+  .Newsletter > div > :last-child {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .Newsletter > div > :last-child > input {
+    width: 90%;
+  }
+
+  .Newsletter > div > :last-child > button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .Newsletter > div > :last-child {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .Newsletter > div {
+    width: 100%;
+  }
+
+  .Newsletter > div > :last-child > input {
+    width: 60%;
+  }
+}

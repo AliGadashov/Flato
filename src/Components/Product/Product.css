@@ -1,0 +1,107 @@
+.Product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10rem;
+  height: 100vh;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.productCategories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.productCategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1.5rem;
+  background-color: var(--main-peach);
+  transition: 0.8s ease;
+}
+
+.productCategory:hover {
+  background-image: url(../../assets/l-wave.jpg);
+  background-blend-mode: soft-light;
+  background-color: var(--main-peach);
+  transform: scale(1.1);
+}
+
+.productCategory > :nth-child(2) {
+  font-size: 1.5rem;
+  color: var(--main-white);
+}
+
+.productCategory > :nth-child(3) {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main-white);
+}
+
+.productCategory > button {
+  margin: 1rem 0;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  color: var(--main-dark-peach);
+  background: var(--main-white);
+  transition: 300ms ease;
+}
+
+.productCategory > button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--main-white);
+  background: var(--main-dark-peach);
+}
+
+.productCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  background-color: var(--main-white);
+}
+
+@media screen and (max-width: 768px) {
+  .Product {
+    text-align: center;
+    padding: 0 2rem;
+    height: 100%;
+  }
+
+  .productHeader {
+    gap: 5rem;
+    font-size: 2.5rem;
+  }
+
+  .productCategories {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .Product {
+    padding: 1% 10% 5% 10%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+.NewHeight {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 140px;
+  padding: 0 10rem;
+  height: 100vh;
+}
+
+.leftNewHeight > img {
+  width: 32rem;
+  transition: 0.8s ease-in-out;
+}
+
+.leftNewHeight > img:hover {
+  transform: scale(1.1);
+}
+
+.rightNewHeight {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightNewHeight > div {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.rightNewHeight > p {
+  margin: 2rem 0;
+}
+
+.rightNewHeight > button {
+  width: 9rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  color: var(--main-white);
+  background: var(--main-dark-peach);
+  transition: 300ms ease;
+}
+
+.rightNewHeight > button:hover {
+  cursor: pointer;
+  background: var(--main-peach);
+}
+
+@media screen and (max-width: 768px) {
+  .NewHeight {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    height: 100%;
+  }
+
+  .leftNewHeight > img {
+    width: 15rem;
+  }
+
+  .rightNewHeight {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rightNewHeight > div {
+    font-size: 2.5rem;
+  }
+
+  .rightNewHeight > p {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .NewHeight {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 2% 10%;
+    height: 100%;
+  }
+
+  .leftNewHeight > img {
+    width: 100%;
+    transition: 0.8s ease-in-out;
+  }
+}
